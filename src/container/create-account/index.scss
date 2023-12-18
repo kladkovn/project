@@ -1,0 +1,76 @@
+@use '../../style' as s;
+
+main {
+	background: s.color(light);
+	color: s.color(dark);
+	padding: s.space(4);
+}
+
+a {
+    text-decoration: none;
+    color: s.color(main);
+    transition: opacity 0.6s;
+
+    &:hover{
+        opacity: 0.6;
+    }
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items:center;
+	padding: s.space(5) s.space(20);
+}
+.back__link{
+	padding: s.space(4);
+	display: flex;
+	justify-content: center;
+	gap: s.space(2);
+}
+.form__card{
+	max-width: 456px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: s.space(6) s.space(10);
+	gap: s.space(3);
+	border: 1px solid s.color(border);
+	border-radius: s.space(6);
+}
+
+.card__body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	padding: s.space(2) s.space(4);
+	gap: s.space(2);
+	&>.title{
+		padding: 0px s.space(6);
+	}
+	
+	&>.comment{
+		font-size: 12px;
+		margin-inline-end: auto;
+	}
+	&>.btn-primary{
+		border-radius: 50px;
+		padding: s.space(3) s.space(25);
+	}
+	
+}
+.input{
+	
+	
+	border: 1px solid s.color(border);
+	border-radius: s.space(4);
+	&>input{
+		padding: s.space(1) s.space(3);
+		&:hover{
+			border: 1px solid s.color(border);
+			border-radius: s.space(4);
+		}
+		
+	}
+}

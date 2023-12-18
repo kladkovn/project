@@ -4,7 +4,156 @@
 }}
 
 <main>
-	{{>heading title="Index" info=data.test}}
+	<section class="header">
+        <header class="header__block">
+            <div class="header__logo">
+                <img src="/img/Logo.png" alt="logo">
+            </div>
+            <div class="header__link">
+                <div class="dropdown">
+                    <button class="btn btn-text dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        GreenU
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Knowledge base</a></li>
+                        <li><a class="dropdown-item" href="#">Case Studies</a></li>
+                        <li><a class="dropdown-item" href="#">Interactive tools</a></li>
+                        <li><a class="dropdown-item" href="#">Training Platform</a></li>
+                        <li><a class="dropdown-item" href="#">Events</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Documents</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-text" type="button">
+                        News
+                    </button>
+                    
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-text" type="button">
+                        Financing
+                    </button>
+                    
+                </div>
+                       
+                <div class="dropdown">
+                    <button class="btn btn-text dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Solution
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Categories</a></li>
+                        <li><a class="dropdown-item" href="#">Vendors</a></li>
+    
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-text dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Contacts</a></li>
+                            
+                    </ul>
+                </div>
+            </div>
+            <div class="header__search">
+                <a href="#">
+                    <img src="/svg/loop.svg" alt="loop">
+                </a>
+                
+                <button class="btn btn-primary">Create Application</button>
+                <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="#">En</a></li>
+                    <li><a class="dropdown-item" href="#">Ukr</a></li>
+                    <li><a class="dropdown-item" href="#">Ru</a></li>
+                </ul>
+                </div>
+                
+                <a href="#"><img src="/svg/icon.svg" alt="icon"></a>
+                
+            </div>
+        </header>
+    </section>
+
+    <section class="hero__first">
+        <div class="hero__block">
+            <p class="hero__block__text">Create application</p>
+            <h1 class="hero__block__title">Do you have an account?</h1>
+            <div class="hero__card">
+                
+                <div class="card__body">
+                    <a href="#">
+                        <img src="/svg/play.svg" alt="">
+                    </a>
+                    <p class="card__body__text">Skip this step</p>
+                </div>
+                <div class="card__body">
+                    <a href="#">
+                        <img src="/svg/profile.svg" alt="">
+                    </a>
+                    <p class="card__body__text">Create account</p>
+                </div>
+                <div class="card__body">
+                    <a href="#">
+                        <img src="/svg/log.svg" alt="">
+                    </a>
+                    <p class="card__body__text">Log In</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer__block">
+           <div>
+                <img src="/img/Logo.png" alt="logo">
+            </div>
+            <div class="footer__btn">
+                <button class="btn btn-primary">Create Application</button>
+                <button class="btn btn-outline-primary">Log In/Sign Up</button> 
+            </div>
+           
+        </div>
+        <div class="footer__block link-first">
+            <a href="#">GreenU</a>
+            <a href="#">News</a>
+            <a href="#">Financing</a>
+            <a href="#">Solutions</a>
+            <a href="#">About</a>
+        </div>
+        <div class="footer__block link-second">
+            <a href="#">GreenU</a>
+            <a href="#">News</a>
+            <a href="#">Financing</a>
+            <a href="#">Solutions</a>
+            <a href="#">About</a>
+        </div>
+        <div class="footer__block link-second">
+            <a href="#">GreenU</a>
+            <a href="#">News</a>
+            <a href="#">Financing</a>
+            <a href="#">Solutions</a>
+            <a href="#">About</a>
+        </div>
+
+        <br>
+
+        
+    </section>
+    <div class="footer__copyr">
+            
+        <small>Terms of use</small>
+    
+        <em>ndp.ua 2023 @ All rights reserved</em>
+            
+            
+    </div>
 </main>
 
 {{!

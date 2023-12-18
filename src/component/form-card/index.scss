@@ -1,0 +1,38 @@
+@use '../../style' as s;
+
+main {
+	background: s.color(light);
+	color: s.color(dark);
+	padding: s.space(4);
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+    transition: opacity 0.6s;
+
+    &:hover{
+        opacity: 0.6;
+    }
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content:center;
+	padding: s.space(5) s.space(25);
+}
+.back__link{
+	padding: s.space(4);
+	display: flex;
+	justify-content: center;
+}
+.form__card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: s.space(6);
+	gap: s.space(3);
+	border: 1px solid s.color(border);
+	border-radius: s.space(8);
+}

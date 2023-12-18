@@ -1,0 +1,44 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<main>
+
+    <form action="#" method="post" class="form">
+        <div class="back__link">
+            <a href="/index"><img src="/svg/arrow_back.svg">Go back</a>
+        </div>
+        <div class="form__card">
+            
+           <div class="card__body">
+            <h3 class="title">Create account</h3>
+            <div class="input" width="200" height="60">
+                <input type="text" class="card__body__input" name="name" placeholder="Email (login)">
+                <img src="/svg/eye.svg" alt="eye">
+            </div>
+            <div class="input" width="200" height="60">
+                <input type="text" class="card__body__input" name="name" placeholder="Password">
+                <img src="/svg/eye.svg" alt="eye">
+            </div>
+            <div class="comment">
+                <span class="comment">Must be at least 8 characters</span>
+            </div>
+            
+            <div class="input" width="200" height="60">
+                <input type="text" class="card__body__input" name="name" placeholder="Confirm password">
+                <img src="/svg/eye.svg" alt="eye">
+            </div>
+            <button class="btn btn-primary">Sign up</button>
+           </div>
+            
+        </div>
+    </form>
+	
+
+</main>
+
+{{!
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}
