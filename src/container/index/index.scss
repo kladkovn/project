@@ -1,5 +1,8 @@
 @use '../../style' as s;
 
+@use '../../component/header/index.scss';
+
+
 main {
 	background: s.color(light);
 	color: s.color(dark);
@@ -65,8 +68,8 @@ a {
 	font-size: 14px;
 }
 .hero__first{
-	padding: s.space(40) s.space(20);
-	background: s.color(light);
+	padding: s.space(20) s.space(20) s.space(40) s.space(20);
+	background: s.color(back);
 }
 .hero__block{
 	
@@ -95,7 +98,7 @@ a {
 
 
 .card__body{
-	// max-width: 360px;
+	background-color: s.color(light);
 	display: flex;
 	flex-direction: column;
 	align-items: center;

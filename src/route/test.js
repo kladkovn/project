@@ -18,7 +18,7 @@ router.get('/', function (req, res) {
     // вказуємо назву контейнера
     name: 'index',
     // вказуємо назву компонентів
-    component: ['heading'],
+    component: ['heading', 'header', 'footer'],
 
     // вказуємо назву сторінки
     title: 'create options',
@@ -40,7 +40,7 @@ router.get('/create-account', function (req, res) {
     // вказуємо назву контейнера
     name: 'create-account',
     // вказуємо назву компонентів
-    component: ['heading'],
+    component: ['heading', 'header', 'footer'],
 
     // вказуємо назву сторінки
     title: 'create account',
@@ -62,7 +62,7 @@ router.get('/create-login', function (req, res) {
     // вказуємо назву контейнера
     name: 'create-login',
     // вказуємо назву компонентів
-    component: ['heading'],
+    component: ['heading','header', 'footer'],
 
     // вказуємо назву сторінки
     title: 'create login',
@@ -84,7 +84,7 @@ router.get('/recovery', function (req, res) {
     // вказуємо назву контейнера
     name: 'recovery',
     // вказуємо назву компонентів
-    component: ['heading'],
+    component: ['heading','header', 'footer'],
 
     // вказуємо назву сторінки
     title: 'recovery',
@@ -106,7 +106,7 @@ router.get('/type-account', function (req, res) {
     // вказуємо назву контейнера
     name: 'type-account',
     // вказуємо назву компонентів
-    component: ['heading'],
+    component: ['heading', 'header', 'footer'],
 
     // вказуємо назву сторінки
     title: 'type-account',
@@ -128,10 +128,98 @@ router.get('/contact-form', function (req, res) {
     // вказуємо назву контейнера
     name: 'contact-form',
     // вказуємо назву компонентів
-    component: ['heading'],
+    component: ['heading','header','footer'],
 
     // вказуємо назву сторінки
     title: 'contact-form',
+    // ... сюди можна далі продовжувати додавати потрібні технічні дані, які будуть використовуватися в layout
+
+    // вказуємо дані,
+    data: {
+      
+    },
+  })
+  // ↑↑ сюди вводимо JSON дані
+})
+
+router.get('/contact-save', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  // ↙️ cюди вводимо назву файлу з сontainer
+  res.render('contact-save', {
+    // вказуємо назву контейнера
+    name: 'contact-save',
+    // вказуємо назву компонентів
+    component: ['heading','header', 'footer'],
+
+    // вказуємо назву сторінки
+    title: 'contact-save',
+    // ... сюди можна далі продовжувати додавати потрібні технічні дані, які будуть використовуватися в layout
+
+    // вказуємо дані,
+    data: {
+      
+    },
+  })
+  // ↑↑ сюди вводимо JSON дані
+})
+
+router.get('/org-about', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  // ↙️ cюди вводимо назву файлу з сontainer
+  res.render('org-about', {
+    // вказуємо назву контейнера
+    name: 'org-about',
+    // вказуємо назву компонентів
+    component: ['heading','header', 'footer'],
+
+    // вказуємо назву сторінки
+    title: 'org-about',
+    // ... сюди можна далі продовжувати додавати потрібні технічні дані, які будуть використовуватися в layout
+
+    // вказуємо дані,
+    data: {
+      
+    },
+  })
+  // ↑↑ сюди вводимо JSON дані
+})
+
+router.get('/org-about-data', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  // ↙️ cюди вводимо назву файлу з сontainer
+  res.render('org-about-data', {
+    // вказуємо назву контейнера
+    name: 'org-about-data',
+    // вказуємо назву компонентів
+    component: ['heading','header', 'footer'],
+
+    // вказуємо назву сторінки
+    title: 'org-about-data',
+    // ... сюди можна далі продовжувати додавати потрібні технічні дані, які будуть використовуватися в layout
+
+    // вказуємо дані,
+    data: {
+      
+    },
+  })
+  // ↑↑ сюди вводимо JSON дані
+})
+
+router.get('/org-address', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  // ↙️ cюди вводимо назву файлу з сontainer
+  res.render('org-address', {
+    // вказуємо назву контейнера
+    name: 'org-address',
+    // вказуємо назву компонентів
+    component: ['heading','header', 'footer'],
+
+    // вказуємо назву сторінки
+    title: 'org-address',
     // ... сюди можна далі продовжувати додавати потрібні технічні дані, які будуть використовуватися в layout
 
     // вказуємо дані,

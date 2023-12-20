@@ -16,11 +16,12 @@ a {
     }
 }
 .form{
+	background-color: s.color(back);
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items:center;
-	padding: s.space(5) s.space(20);
+	padding: s.space(5) s.space(20) s.space(40) s.space(5);
 	
 }
 .back__link{

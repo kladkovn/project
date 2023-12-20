@@ -1,8 +1,73 @@
-<div class="heading">
-	{{#if title}}
-		<h1 class="heading__title">{{title}}</h1>
-	{{/if}}
-	{{#if info}}
-		<p class="heading__info">{{info}}</p>
-	{{/if}}
-</div>
+ <header class="header__block">
+            <div class="header__logo">
+                <img src="/img/Logo.png" alt="logo">
+            </div>
+            <div class="header__link">
+                <div class="dropdown">
+                    <button class="btn btn-text dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        GreenU
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Knowledge base</a></li>
+                        <li><a class="dropdown-item" href="#">Case Studies</a></li>
+                        <li><a class="dropdown-item" href="#">Interactive tools</a></li>
+                        <li><a class="dropdown-item" href="#">Training Platform</a></li>
+                        <li><a class="dropdown-item" href="#">Events</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Documents</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-text" type="button">
+                        News
+                    </button>
+                    
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-text" type="button">
+                        Financing
+                    </button>
+                    
+                </div>
+                       
+                <div class="dropdown">
+                    <button class="btn btn-text dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Solution
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Categories</a></li>
+                        <li><a class="dropdown-item" href="#">Vendors</a></li>
+    
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-text dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Contacts</a></li>
+                            
+                    </ul>
+                </div>
+            </div>
+            <div class="header__search">
+                <a href="#">
+                    <img src="/svg/loop.svg" alt="loop">
+                </a>
+                
+                <button class="btn btn-primary">Create Application</button>
+                <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="#">En</a></li>
+                    <li><a class="dropdown-item" href="#">Ukr</a></li>
+                    <li><a class="dropdown-item" href="#">Ru</a></li>
+                </ul>
+                </div>
+                
+                <a href="#"><img src="/svg/icon.svg" alt="icon"></a>
+                
+            </div>
+        </header>

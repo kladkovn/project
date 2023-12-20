@@ -16,11 +16,12 @@ a {
     }
 }
 .form{
+	background-color: s.color(back);
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items:center;
-	padding: s.space(5) s.space(20);
+	padding: s.space(5) s.space(20) s.space(40) s.space(20);
 }
 .back__link{
 	padding: s.space(4);
@@ -37,6 +38,7 @@ a {
 	gap: s.space(3);
 	border: 1px solid s.color(border);
 	border-radius: s.space(6);
+	background-color: s.color(light);
 }
 
 .card__body{

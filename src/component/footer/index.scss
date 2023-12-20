@@ -1,17 +1,48 @@
 @use '../../style' as s;
 
-.heading {
-  display: flex;
+@use '../../component/header/index.scss';
+
+.footer{
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	padding: s.space(4) s.space(10);
+	align-content: center;
+	background: s.color(light);
+}
+
+.footer__block{
+	display: flex;
 	flex-direction: column;
-	gap: 16px
-}
+	justify-content: center;
+	gap: s.space(4);
+	font-size: 14px;
+	padding-left:s.space(3) ;
 
-.heading__title {
-  font-size: 24px;
-	color: s.color(light);
-}
+}	
 
-.heading__info {
-  font-size: 16px;
-	color: s.color(light);
+.footer__btn{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: s.space(2);
+	margin: auto 0px;
+
+	&>.btn-outline-primary{
+		border: 1px solid s.color(main);
+		border-radius: 50px;
+		padding: s.space(2) s.space(3);
+		color: s.color(main);
+		font-size: 14px;
+	}
+}
+.footer__copyr{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: s.space(4) s.space(10);
+	font-size: 10px;
+	color: s.color(gray);
+	background-color: s.color(light);
+	border-top: 1px solid s.color(border);
 }
